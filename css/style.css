@@ -1,0 +1,49 @@
+/*!
+
+Main CSS File for the entire website (project-level file).
+
+Don't put individual html file level properties here.
+
+Contains CSS Properties for Header (NavBar) and Footer.
+
+Naming Conventions:
+===================
+- for ids, use underscore(_)
+- for classes, use hyphen(-)
+
+*/
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.prim-color {
+    background-color: #003A3E;
+}
+
+.prim-text-color {
+    color: #003A3E;
+}
+
+#footer {
+    background-color: #003A3E;
+}
+
+#datenschutz_btn:hover {
+    cursor: pointer;
+}
+
+#imprint_btn:hover {
+    cursor: pointer;
+}
+
+.content-header-bar {
+    background-color: #003A3E;
+    text-align: center;
+}
+.content-header-bar p {
+    text-align: center;
+    color: white;
+    padding: 4px;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Membership - Mountain Bike Club Stuttgart</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap Main CSS File-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <!--Bootstrap Util CSS File-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-utilities.css">
+
+    <!--Project-level CSS file (Common)-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- membership.html page CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/membership.css">
+
+</head>
+
+<body>
+
+<div id="content">
+    <!--Top Navigation Bar-->
+    <div id="navbar">
+        <!--If position fixed-top class is used, need to add padding-top to <body> element-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #003A3E;">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-3" href="index.html">Mountain Bike Club Stuttgart</a>
+                <!--Toggler - Hamburger button/icon on the right for smaller screens-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseContent"
+                        aria-controls="navbarCollapseContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsable content when toggler icon is shown for smaller screens-->
+                <!-- Use justify-content-(start|center|end|around) for aligning the navbar items -->
+                <div class="collapse navbar-collapse justify-content-start" id="navbarCollapseContent">
+                    <!--mx-2 and mx-3 classes provide margins (left & right)-->
+                    <!-- Search Input Field for NavBar on the right-->
+                    <ul class="navbar-nav me-auto mx-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <!--Use 'active' class and aria-current="page" for the current active navbar item-->
+                            <a class="nav-link active" aria-current="page" href="#">Membership</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+
+                    <!--Set 'active' class for nav-item for each corresponding HTML page-->
+                    <form class="d-inline-flex ms-3 me-2 w-auto">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Start typing here..." maxlength="20" aria-label="Search">
+                        <button class="btn btn-sm btn-primary" type="submit">Search</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Main Page Content here-->
+    <div id="main_content">
+
+        <div id="membership_header" class="container">
+            <div class="card bg-light my-5">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Member Registration</h4>
+                    <p class="card-text fst-italic mt-3">
+                        Thanks for joining us! Short reminder that we need a declaration of consent from your parents if you are not yet 18.
+                        We will take care of personal data and guarantee to not pass it on to external persons.
+                        After submitting the file we will inform you via email about the payment possibilities and additional course information.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="membership_form" class="container my-4">
+
+            <div class="d-flex justify-content-center">
+                <p class="h4">Fill the Membership Form</p>
+            </div>
+
+            <div class="row justify-content-center align-items-center mt-3 mb-5">
+
+                <div id="membership_form_inputs" class="col-lg-8 col-md-11 p-5">
+
+                    <p class="fs-5 lead mb-0">Choose Course Type</p>
+                    <div id="courses_radio_group" class="my-1">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="beginner">
+                            <label class="form-check-label" for="inlineRadio1">Beginner <span class="fst-italic">249,00 &euro;</span></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="intermediate">
+                            <label class="form-check-label" for="inlineRadio2">Intermediate <span class="fst-italic">299,00 &euro;</span></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="advanced">
+                            <label class="form-check-label" for="inlineRadio3">Advanced <span class="fst-italic">349,00 &euro;</span></label>
+                        </div>
+                    </div>
+
+                    <p class="fs-5 lead mt-3 mb-2">Personal Data</p>
+                    <div class="row g-3">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <div class="row g-2 mt-1">
+                        <div class="col-lg-6 align-self-center">
+                            <input type="text" class="form-control" placeholder="DD.MM.YYYY" onfocus="(this.type='date')" aria-label="dob">
+                        </div>
+                        <div class="col-lg-6">
+                            <div id="form_gender_group" class="my-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGenderRadio" value="beginner">
+                                    <label class="form-check-label" for="maleGenderRadio">Male </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGenderRadio" value="intermediate">
+                                    <label class="form-check-label" for="femaleGenderRadio">Female </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="preferNotToSayRadio" value="advanced">
+                                    <label class="form-check-label" for="preferNotToSayRadio">Prefer not to say</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="fs-5 lead mt-3 mb-2">Address</p>
+
+                    <div class="row g-3">
+
+                        <div class="col-lg-6 col-md-9 col-sm-11">
+                            <input type="text" class="form-control" placeholder="Street Name and Number" aria-label="Street Name and Number">
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mt-0 mb-4">
+                        <div class="col-lg-2 col-md-3 col-sm-3">
+                            <input type="number" class="form-control" placeholder="Zip" aria-label="Zip">
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-8">
+                            <input type="text" class="form-control" placeholder="City" aria-label="City">
+                        </div>
+                    </div>
+
+                    <p class="fs-5 lead mb-2">Contact Details</p>
+                    <div class="row mb-3">
+                        <div class="col-lg-6 col-md-9 col-sm-11">
+                            <input type="email" class="form-control" placeholder="Email address" aria-label="Email">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-6 col-md-9 col-sm-11">
+                            <input type="number" class="form-control" placeholder="Phone number" aria-label="Phone">
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="newsletterSubscribe" checked>
+                        <label class="form-check-label" for="newsletterSubscribe">
+                            Subscribe to our monthly newsletter
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            I read and accept the <a target="_blank" href="html/404.html">Terms &amp; Conditions</a>
+                        </label>
+                    </div>
+
+                    <div class="col-auto mt-4">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Footer Div-->
+    <div id="footer">
+        <!--Footer Content here-->
+
+        <div class="container">
+            <footer class="pt-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <h5 class="text-white">Mountain Bike Club</h5>
+                        <p class="text-white-50">Königstraße 26<br/>70173 Stuttgart<br/>Deutschland<br/><br/>Tel: 0711-000-0000<br/>Fax: 0711-000-0001</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 d-none d-md-block">
+                        <h5 class="text-white">Links</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a></li>
+                            <li class="nav-item mb-2"><a href="courses.html" class="nav-link p-0 text-white-50">Courses</a></li>
+                            <li class="nav-item mb-2"><a href="membership.html" class="nav-link p-0 text-white-50">Membership</a></li>
+                            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-white-50">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 offset-lg-1">
+                        <form>
+                            <ul class="list-unstyled d-flex mb-4">
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/instagram.png" alt="Instagram"/></a></li>
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/facebook.png" alt="Facebook" /></a></li>
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/twitter.png" alt="Twitter" /></a></li>
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/tiktok.png" alt="TikTok" /></a></li>
+                            </ul>
+                            <h5 class="text-white">Subscribe to our newsletter</h5>
+                            <p class="text-white-50">Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3 py-2 border-top">
+                    <p class="text-white-50 mx-2 mb-1">&copy; 2022 Mountain Bike Club Stuttgart</p>
+                    <div class="d-flex">
+                        <p id="imprint_btn" class="text-white-50 me-3 mb-1">Imprint</p>
+                        <p id="datenschutz_btn" class="text-white-50 me-2 ms-3 mb-1">Data Protection</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

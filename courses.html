@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses - Mountain Bike Club Stuttgart</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap Main CSS File-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <!--Bootstrap Util CSS File-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-utilities.css">
+
+    <!--Project-level CSS file (Common)-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- courses.html page CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/courses.css">
+
+</head>
+
+<body>
+
+<div id="content">
+    <!--Top Navigation Bar-->
+    <div id="navbar">
+        <!--If position fixed-top class is used, need to add padding-top to <body> element-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #003A3E;">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-3" href="index.html">Mountain Bike Club Stuttgart</a>
+                <!--Toggler - Hamburger button/icon on the right for smaller screens-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseContent"
+                        aria-controls="navbarCollapseContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsable content when toggler icon is shown for smaller screens-->
+                <!-- Use justify-content-(start|center|end|around) for aligning the navbar items -->
+                <div class="collapse navbar-collapse justify-content-start" id="navbarCollapseContent">
+                    <!--mx-2 and mx-3 classes provide margins (left & right)-->
+                    <!--Set 'active' class for nav-item for each corresponding HTML page-->
+                    <ul class="navbar-nav me-auto mx-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <!--Use 'active' class and aria-current="page" for the current active navbar item-->
+                            <a class="nav-link active" aria-current="page" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="membership.html">Membership</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search Input Field for NavBar on the right-->
+                    <form class="d-inline-flex ms-3 me-2 w-auto">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Start typing here..." maxlength="20" aria-label="Search">
+                        <button class="btn btn-sm btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Main Page Content here-->
+    <div id="main_content">
+
+        <div id="courses_overview">
+
+            <div class="container content-header-bar mt-4">
+                <p class="h3">Courses Overview</p>
+            </div>
+
+            <div id="courses_levels" class="container text-center mt-5">
+
+                <div class="row">
+                    <div class="col-lg-4 course-item" onclick="location.href='#beginner_level'">
+                        <svg class="bd-placeholder-img" width="250" height="180"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" />
+                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                        </svg>
+
+                        <h2 class="fw-normal mt-2">Beginner</h2>
+                        <p class="mx-2">You don´t have any or very limited experiences in mountain biking?
+                            Start with our basic mountain bike course that is perfect for beginners and returness.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 course-item" onclick="location.href='#intermediate_level'">
+                        <svg class="bd-placeholder-img" width="250" height="180"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" />
+                            <text x="50%" y="50%" fill="#FFFFFF" dy=".3em">140x140</text>
+                        </svg>
+
+                        <h2 class="fw-normal mt-2">Intermediate</h2>
+                        <p class="mx-2">If you already have first experiences in mountain biking
+                            and are looking to improve your trailflow, we suggest this course to you!
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 course-item" onclick="location.href='#advanced_level'">
+                        <svg class="bd-placeholder-img" width="250" height="180"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" />
+                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                        </svg>
+
+                        <h2 class="fw-normal mt-2">Advanced</h2>
+                        <p class="mx-2">You already are really good in mountain biking but are still looking for improvement?
+                            Then we might just have the perfect thing for you!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="course_contents">
+
+            <div id="beginner_level" class="container my-5">
+
+                <hr class="prim-color courses-divider"/>
+
+                <div class="row align-items-center justify-content-center my-lg-4 my-md-3">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <svg class="img-fluid mx-auto"
+                             width="400" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
+                             aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"/>
+                            <text x="50%" y="50%" fill="#aaa" dy=".3em">400x500</text>
+                        </svg>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="h1 my-lg-3 my-md-2">Beginner</p>
+                        <p class="fs-5">
+                            We start with teaching basic knowledge like the right adjustment of the bike,
+                            the basic posture for trails and  important braking techniques.
+                            Additionally we will talk about secure and efficient behaviour
+                            during curves before we start with the first small jumps and  obstacles.
+                            The trainer responds to individual wishes and needs and guarantees lots of field practice.
+                            Our goal for this course? To share our love for mountain biking.
+                        </p>
+                        <p class="fs-5"><strong>Duration: </strong>2 hour/week training (14 hours/course)</p>
+                        <p class="fs-5"><strong>Batch size: </strong>15 (limited!)</p>
+                        <p class="fs-5"><strong>Next batch starts: </strong>01.03.2022</p>
+                        <p class="fs-5"><strong>Training Cost: </strong><span class="fst-italic">249,00 &euro; (incl. VAT)</span></p>
+                        <p class="fs-5">
+                            Interested in this course? <a class="fw-bold" href="membership.html">Join now!</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="intermediate_level" class="container my-5">
+
+                <hr class="prim-color courses-divider"/>
+
+                <div class="row align-items-center justify-content-center my-lg-4 my-md-3">
+                    <div class="col-lg-5 order-lg-2 d-flex justify-content-center">
+                        <svg class="img-fluid mx-auto"
+                             width="400" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
+                             aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"/>
+                            <text x="50%" y="50%" fill="#aaa" dy=".3em">400x500</text>
+                        </svg>
+                    </div>
+                    <div class="col-lg-7 order-lg-1 ps-lg-4">
+                        <p class="h1 my-lg-3 my-md-2">Intermediate</p>
+                        <p class="fs-5">
+                            This course focuses on different techniques for the right handling of curves.
+                            Always wanted to try the Bunny Hop? Perfect, let´s go!
+                            We will take off with both the front and the rear wheel.
+                            Additionally, the course teaches you how to handle steeper trails.
+                            We offer a small group size, which allows the trainer to concentrate
+                            on the individual improvement of each participant.
+                            While this course goes into more details regarding the different techniques,
+                            the main goal is having fun and feeling the adrenaline.
+
+                        </p>
+                        <p class="fs-5"><strong>Duration: </strong>3 hour/week training (18 hours/course)</p>
+                        <p class="fs-5"><strong>Batch size: </strong>10 (limited!)</p>
+                        <p class="fs-5"><strong>Next batch starts: </strong>01.03.2022</p>
+                        <p class="fs-5"><strong>Training Cost: </strong><span class="fst-italic">299,00 &euro; (incl. VAT)</span></p>
+                        <p class="fs-5">
+                            Interested in this course? <a class="fw-bold" href="membership.html">Join now!</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="advanced_level" class="container my-5">
+
+                <hr class="prim-color courses-divider"/>
+
+                <div class="row align-items-center justify-content-center my-lg-4 my-md-3">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <svg class="img-fluid mx-auto"
+                             width="400" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
+                             aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"/>
+                            <text x="50%" y="50%" fill="#aaa" dy=".3em">400x500</text>
+                        </svg>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="h1 my-lg-3 my-md-2">Advanced</p>
+                        <p class="fs-5">
+                            This course focuses on more difficult bunny hops and jumps.
+                            Additionally, we will improve the active handling of curves and thereby the speed, including drifting.
+                            We also talk about biking during good and bad weather conditions.
+                            Our professional trainer with year-long experience shares his private tricks and tips to make a professional out of you.
+                            No question will be left unanswered and the course offers lots of opportunities for individual wishes.
+                            In the end you can participate in a small contest.
+
+
+                        </p>
+                        <p class="fs-5"><strong>Duration: </strong>4 hour/week training (20 hours/course)</p>
+                        <p class="fs-5"><strong>Batch size: </strong>10 (limited!)</p>
+                        <p class="fs-5"><strong>Next batch starts: </strong>01.03.2022</p>
+                        <p class="fs-5"><strong>Training Cost: </strong><span class="fst-italic">349,00 &euro; (incl. VAT)</span></p>
+                        <p class="fs-5">
+                            Interested in this course? <a class="fw-bold" href="membership.html">Join now!</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="coaches">
+
+            <div class="container content-header-bar mt-4">
+                <p class="h3">Coaches</p>
+            </div>
+
+            <div id="coaches_overview" class="container text-center my-4">
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" />
+                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                        </svg>
+
+                        <h2 class="fw-normal mt-1 mb-0">Ricardo</h2>
+                        <p class="mx-2">Beginner</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" />
+                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                        </svg>
+
+                        <h2 class="fw-normal mt-1 mb-0">Anna</h2>
+                        <p class="mx-2">Intermediate</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" />
+                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                        </svg>
+
+                        <h2 class="fw-normal mt-1 mb-0">Benjamin</h2>
+                        <p class="mx-2">Advanced</p>
+                    </div>
+
+                </div>
+
+                <div id="read_more_btn" class="d-flex justify-content-center my-3">
+                    <a href="about.html#our_team_header">
+                        <button class="fs-5 px-lg-3 px-md-2 py-lg-2 py-md-1">Read more &raquo;</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer Div-->
+    <div id="footer">
+        <!--Footer Content here-->
+
+        <div class="container">
+            <footer class="pt-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <h5 class="text-white">Mountain Bike Club</h5>
+                        <p class="text-white-50">Königstraße 26<br/>70173 Stuttgart<br/>Deutschland<br/><br/>Tel: 0711-000-0000<br/>Fax: 0711-000-0001</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 d-none d-md-block">
+                        <h5 class="text-white">Links</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a></li>
+                            <li class="nav-item mb-2"><a href="courses.html" class="nav-link p-0 text-white-50">Courses</a></li>
+                            <li class="nav-item mb-2"><a href="membership.html" class="nav-link p-0 text-white-50">Membership</a></li>
+                            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-white-50">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 offset-lg-1">
+                        <form>
+                            <ul class="list-unstyled d-flex mb-4">
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/instagram.png" alt="Instagram"/></a></li>
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/facebook.png" alt="Facebook" /></a></li>
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/twitter.png" alt="Twitter" /></a></li>
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/tiktok.png" alt="TikTok" /></a></li>
+                            </ul>
+                            <h5 class="text-white">Subscribe to our newsletter</h5>
+                            <p class="text-white-50">Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3 py-2 border-top">
+                    <p class="text-white-50 mx-2 mb-1">&copy; 2022 Mountain Bike Club Stuttgart</p>
+                    <div class="d-flex">
+                        <p id="imprint_btn" class="text-white-50 me-3 mb-1">Imprint</p>
+                        <p id="datenschutz_btn" class="text-white-50 me-2 ms-3 mb-1">Data Protection</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

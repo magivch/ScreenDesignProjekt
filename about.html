@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Membership - Mountain Bike Club Stuttgart</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap Main CSS File-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <!--Bootstrap Util CSS File-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-utilities.css">
+
+    <!--Project-level CSS file (Common)-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- about.html page CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+
+</head>
+
+<body>
+
+<div id="content">
+    <!--Top Navigation Bar-->
+    <div id="navbar">
+        <!--If position fixed-top class is used, need to add padding-top to <body> element-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #003A3E;">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-3" href="index.html">Mountain Bike Club Stuttgart</a>
+                <!--Toggler - Hamburger button/icon on the right for smaller screens-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseContent"
+                        aria-controls="navbarCollapseContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsable content when toggler icon is shown for smaller screens-->
+                <!-- Use justify-content-(start|center|end|around) for aligning the navbar items -->
+                <div class="collapse navbar-collapse justify-content-start" id="navbarCollapseContent">
+                    <!--mx-2 and mx-3 classes provide margins (left & right)-->
+                    <!--Set 'active' class for nav-item for each corresponding HTML page-->
+                    <!-- Search Input Field for NavBar on the right-->
+                    <ul class="navbar-nav me-auto mx-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="membership.html">Membership</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <!--Use 'active' class and aria-current="page" for the current active navbar item-->
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search Input Field for NavBar on the right-->
+                    <form class="d-inline-flex ms-3 me-2 w-auto">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Start typing here..." maxlength="20" aria-label="Search">
+                        <button class="btn btn-sm btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Main Page Content here-->
+    <div id="main_content">
+
+
+        <div id="top_section">
+
+            <img src="img/about_image.jpg" class="img-fluid" alt="About Page Image">
+
+            <div id="about_img_overlay">
+
+                <div id="overlay_text" class="p-lg-5 p-md-3 p-sm-1">
+                    <p class="h2 text-center text-black fst-italic">
+                        "If it doesn't challenge you, it doesn't change you!"
+                    </p>
+                </div>
+
+                <div id="go_down_btn" class="d-flex justify-content-center mt-lg-5 mt-md-4 mt-sm-3">
+                    <a href="#about_content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#FFF" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="about_content" class="container my-3">
+
+            <div class="clearfix">
+                <img src="img/placeholder_300x300.png" class="col-md-6 float-md-end mb-3 ms-md-3 p-lg-5 p-md-4" alt="About Image">
+
+                <p class="h2 pt-5 pb-3">About Us</p>
+
+                <p class="fs-5 py-2">
+                    The MBCS – Mountain Bike Club Stuttgart – offers courses for mountain bikers all around Stuttgart.
+                    We want to share our riding skills, knowledge, favourite trails, love of nature and - above all – our passion for biking.
+                    We're happy about every new member sharing our interest!
+                </p>
+
+                <p class="fs-5 py-2">
+                    Since our foundation in 2012, it has always been our number one priority to enable a technique training that
+                    happens in a secure and controlled environment and leaves room for a lot of adrenaline,
+                    variety and never ending fun. We can guarantee high quality courses, based on professional experiences.
+                    We achieved in 2021 for the third time the award for best outdoor coaching in Baden-Württemberg.
+                </p>
+
+                <p class="fs-5 py-2">
+                    We're proud of our ever growing community of open minded and dedicated bikers who share their experiences with each other.
+                    We will make sure to continue our community events and challenges and are always glad about new ideas!
+                </p>
+
+            </div>
+
+        </div>
+
+        <div id="our_team_header" class="container content-header-bar mb-4">
+            <p class="h3">Our Team</p>
+        </div>
+
+        <div id="our_team_content" class="container mb-5">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-auto mx-lg-4 ">
+                        <img src="img/placeholder_140x140.png" class="card-img-top" alt="Team Member 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Thomas</h5>
+                            <p class="card-subtitle text-center">Founder</p>
+                            <p class="card-text text-center">thomas@mbc-stuttgart.de</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-auto mx-lg-4">
+                        <img src="img/placeholder_140x140.png" class="card-img-top" alt="Team Member 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Melissa</h5>
+                            <p class="card-subtitle text-center">Manager</p>
+                            <p class="card-text text-center">melissa@mbc-stuttgart.de</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-auto mx-lg-4">
+                        <img src="img/placeholder_140x140.png" class="card-img-top" alt="Team Member 3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Tobias</h5>
+                            <p class="card-subtitle text-center">Secretary</p>
+                            <p class="card-text text-center">tobias@mbc-stuttgart.de</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-auto mx-lg-4">
+                        <img src="img/placeholder_140x140.png" class="card-img-top" alt="Team Member 5">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Benjamin</h5>
+                            <p class="card-subtitle text-center">Trainer</p>
+                            <p class="card-text text-center">benjamin@mbc-stuttgart.de</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-auto mx-lg-4">
+                        <img src="img/placeholder_140x140.png" class="card-img-top" alt="Team Member 5">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Anna</h5>
+                            <p class="card-subtitle text-center">Trainer</p>
+                            <p class="card-text text-center">anna@mbc-stuttgart.de</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-auto mx-lg-4">
+                        <img src="img/placeholder_140x140.png" class="card-img-top" alt="Team Member 4">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Ricardo</h5>
+                            <p class="card-subtitle text-center">Trainer</p>
+                            <p class="card-text text-center">ricardo@mbc-stuttgart.de</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="courses_btn" class="d-flex justify-content-center mt-5">
+                <a href="courses.html"><button class="fs-5 px-lg-3 px-md-2 py-lg-2 py-sm-1">See our courses &raquo;</button></a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--Footer Div-->
+    <div id="footer">
+        <!--Footer Content here-->
+
+        <div class="container">
+            <footer class="pt-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <h5 class="text-white">Mountain Bike Club</h5>
+                        <p class="text-white-50">Königstraße 26<br/>70173 Stuttgart<br/>Deutschland<br/><br/>Tel: 0711-000-0000<br/>Fax: 0711-000-0001</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 d-none d-md-block">
+                        <h5 class="text-white">Links</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a></li>
+                            <li class="nav-item mb-2"><a href="courses.html" class="nav-link p-0 text-white-50">Courses</a></li>
+                            <li class="nav-item mb-2"><a href="membership.html" class="nav-link p-0 text-white-50">Membership</a></li>
+                            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-white-50">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 offset-lg-1">
+                        <form>
+                            <ul class="list-unstyled d-flex mb-4">
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/instagram.png" alt="Instagram"/></a></li>
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/facebook.png" alt="Facebook" /></a></li>
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/twitter.png" alt="Twitter" /></a></li>
+                                <li class="me-3"><a class="link-dark" href="#"><img src="img/tiktok.png" alt="TikTok" /></a></li>
+                            </ul>
+                            <h5 class="text-white">Subscribe to our newsletter</h5>
+                            <p class="text-white-50">Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3 py-2 border-top">
+                    <p class="text-white-50 mx-2 mb-1">&copy; 2022 Mountain Bike Club Stuttgart</p>
+                    <div class="d-flex">
+                        <p id="imprint_btn" class="text-white-50 me-3 mb-1">Imprint</p>
+                        <p id="datenschutz_btn" class="text-white-50 me-2 ms-3 mb-1">Data Protection</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
