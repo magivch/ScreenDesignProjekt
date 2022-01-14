@@ -2,17 +2,14 @@
 
 Main CSS File for the entire website (project-level file).
 
-Don't put individual html file level properties here.
-
-Contains CSS Properties for Header (NavBar) and Footer.
-
-Naming Conventions:
-===================
+Naming Conventions (to follow):
+=============================
 - for ids, use underscore(_)
 - for classes, use hyphen(-)
-
 */
 
+
+/* Common CSS Properties */
 body {
     max-width: 100%;
     overflow-x: hidden;
@@ -46,4 +43,78 @@ body {
     text-align: center;
     color: white;
     padding: 4px;
+}
+
+/* button css */
+#intro_video_overlay button,
+.carousel-caption button,
+#read_more_btn button,
+#courses_btn button{
+    background-color: #67781F;
+    color: white;
+    border-radius: 4px;
+    border-width: 0;
+}
+#intro_video_overlay button:hover,
+.carousel-caption button:hover,
+#read_more_btn button:hover,
+#courses_btn button:hover{
+    background-color: #505f0a;
+}
+
+
+/* Index/Home Page CSS Properties */
+#main_intro_video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+}
+
+#intro_video_overlay {
+    text-align: center;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    margin: 0 auto;
+    position: absolute;
+}
+
+/* Courses Page CSS Properties */
+.courses-divider {
+    min-height: 2px;
+}
+.course-item {
+    cursor: pointer;
+}
+
+/* Membership Page CSS Properties */
+#membership_form_inputs {
+    border: 1px solid #9FC5C0;
+    border-radius: 5px;
+    background-color: #DFE8DF;
+}
+
+/* About page CSS Properties */
+#top_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+}
+
+#about_img_overlay {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+#overlay_text {
+    background-color: rgba(223, 232, 223, 0.4);
 }
