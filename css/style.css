@@ -8,6 +8,36 @@ Naming Conventions (to follow):
 - for classes, use hyphen(-)
 */
 
+/* Fonts */
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Italic';
+    src: url('../fonts/Lato-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-BoldItalic';
+    src: url('../fonts/Lato-BoldItalic.ttf') format('truetype');
+}
 
 /* Common CSS Properties */
 body {
@@ -23,8 +53,41 @@ body {
     color: #003A3E;
 }
 
+.font-poppins-med {
+    font-family: Poppins-Medium, sans-serif;
+}
+
+.font-lato-light {
+    font-family: Lato-Light, sans-serif;
+}
+
+.font-lato-regular {
+    font-family: Lato-Regular, sans-serif;
+}
+
+.font-lato-italic {
+    font-family: Lato-Italic, sans-serif;
+}
+
+.font-lato-bold-italic {
+    font-family: Lato-BoldItalic, sans-serif;
+}
+
+#navbar {
+    font-family: Poppins-Medium, sans-serif;
+}
+
 #footer {
     background-color: #003A3E;
+}
+
+#footer h5 {
+    font-family: Poppins-Medium, sans-serif;
+}
+
+#footer p,
+#footer ul li a {
+    font-family: Lato-Regular, sans-serif;
 }
 
 #datenschutz_btn:hover {
@@ -41,6 +104,7 @@ body {
 }
 .content-header-bar p {
     text-align: center;
+    font-family: Poppins-Medium, sans-serif;
     color: white;
     padding: 4px;
 }
@@ -54,6 +118,7 @@ body {
     color: white;
     border-radius: 4px;
     border-width: 0;
+    font-family: Poppins-Regular, sans-serif;
 }
 #intro_video_overlay button:hover,
 .carousel-caption button:hover,
@@ -84,6 +149,16 @@ body {
     position: absolute;
 }
 
+#news_items h2 {
+    font-family: Poppins-Medium, sans-serif;
+}
+
+#news_items p,
+#carouselLayout h5,
+#carouselLayout p{
+    font-family: Lato-Regular, sans-serif;
+}
+
 /* Courses Page CSS Properties */
 .courses-divider {
     min-height: 2px;
@@ -97,6 +172,7 @@ body {
     border: 1px solid #9FC5C0;
     border-radius: 5px;
     background-color: #DFE8DF;
+    font-family: Lato-Regular, sans-serif;
 }
 
 /* About page CSS Properties */
@@ -113,6 +189,14 @@ body {
     width: 100%;
     height: auto;
     position: absolute;
+}
+
+#our_team_content h5 {
+    font-family: Poppins-Medium, sans-serif;
+}
+
+#our_team_content p {
+    font-family: Lato-Regular, sans-serif;
 }
 
 #overlay_text {
